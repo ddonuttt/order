@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Order Form</title>
+  <title>Order Form</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -51,16 +51,13 @@
     <h2>Place Your Order</h2>
 
     <label for="order">What would you like to order?</label>
-    <textarea id="order" name="order" rows="5" required placeholder="Describe what you want..."></textarea>
+    <textarea id="order" name="order" rows="5" required placeholder="Type what you want..."></textarea>
 
     <label for="name">Your Name (signature)</label>
     <input id="name" name="name" type="text" required placeholder="Your full name">
 
-    <label for="email">Your Email</label>
-    <input id="email" name="_replyto" type="email" required placeholder="you@example.com">
-
     <button type="submit">Submit Order</button>
-    <p class="success">We'll send this to our delivery team!</p>
+    <p class="success">Thanks! Your order has been sent.</p>
   </form>
 </body>
 </html>
