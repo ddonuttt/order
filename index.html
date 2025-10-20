@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Order Form</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 { text-align: center; margin-bottom: 1rem; }
+    label { font-weight: bold; display: block; margin-top: 1rem; }
+    textarea, input {
+      width: 100%;
+      padding: .6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: .3rem;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: .8rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background: #0062d1; }
+    .success { color: green; text-align: center; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <h2>Place Your Order</h2>
+
+    <label for="order">What would you like to order?</label>
+    <textarea id="order" name="order" rows="5" required placeholder="Describe what you want..."></textarea>
+
+    <label for="name">Your Name (signature)</label>
+    <input id="name" name="name" type="text" required placeholder="Your full name">
+
+    <label for="email">Your Email</label>
+    <input id="email" name="_replyto" type="email" required placeholder="you@example.com">
+
+    <button type="submit">Submit Order</button>
+    <p class="success">We'll send this to our delivery team!</p>
+  </form>
+</body>
+</html>
